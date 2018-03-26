@@ -35,69 +35,60 @@
 
     <!-- Horas de ciudad -->
     <LinearLayout
-        android:id="@+id/linear_city1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@id/view_linea_horizontal"
-        android:layout_alignLeft="@id/view_linea_horizontal"
-        android:layout_below="@id/view_linea_horizontal">
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_weight="2"
-            android:layout_height="wrap_content"
-            android:text="@string/text_city_los_angeles"
-            android:textSize="15sp"/>
-
-        <TextView
+        android:layout_below="@id/view_linea_horizontal"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+        <LinearLayout
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="@string/text_hour_example"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linear_city2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@id/view_linea_horizontal"
-        android:layout_alignLeft="@id/view_linea_horizontal"
-        android:layout_below="@id/linear_city1">
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_weight="2"
-            android:layout_height="wrap_content"
-            android:text="@string/text_city_los_angeles"
-            android:textSize="15sp"/>
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:text="@string/text_hour_example"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linear_city3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@id/view_linea_horizontal"
-        android:layout_alignLeft="@id/view_linea_horizontal"
-        android:layout_below="@id/linear_city2">
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_weight="2"
-            android:layout_height="wrap_content"
-            android:text="@string/text_city_los_angeles"
-            android:textSize="15sp"/>
-
-        <TextView
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_city_los_angeles"
+                android:textSize="15sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_city_los_angeles"
+                android:textSize="15sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_city_los_angeles"
+                android:textSize="15sp"/>
+        </LinearLayout>
+        <View
+            android:layout_height="match_parent"
+            android:layout_width="2dp"
+            android:background="#000" />
+        <LinearLayout
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="@string/text_hour_example"/>
+            android:orientation="vertical"
+            android:gravity="end">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_hour_example"
+                android:textSize="15sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_hour_example"
+                android:textSize="15sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_hour_example"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
     </LinearLayout>
 
     <!-- Texto Power View -->
